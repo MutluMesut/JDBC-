@@ -3,9 +3,9 @@ import java.sql.*;
 public class JDBC01_Query01 {
     public static void main(String[] args) throws ClassNotFoundException, SQLException {
 
-        // 1 - Ilgili Driver'i yuklemeliyiz. MySQL kullandigimizi bildiriyoruz.
-        // Driver'i bulamama ihtimaline karsi forName metodu icin ClassNotFoundException
-        // method signature'imiza axception olarak firlatmamizi istiyor.
+                    // 1 - Ilgili Driver'i yuklemeliyiz. MySQL kullandigimizi bildiriyoruz.
+                    // Driver'i bulamama ihtimaline karsi forName metodu icin ClassNotFoundException
+                    // method signature'imiza axception olarak firlatmamizi istiyor.
 
         Class.forName("com.mysql.cj.jdbc.Driver");
                     // mysql icin prantez icindeki kisim sabit olup  başka driver icn
@@ -25,8 +25,9 @@ public class JDBC01_Query01 {
 
 
 
-                      // 3 - SQL query'leri icin bir Statement objesi olusturup , javada SQL
+                       // 3 - SQL query'leri icin bir Statement objesi olusturup , javada SQL
                       // sorgularimiz icin bir alan acacagiz.
+                      // Sql deki tum metodlari bu obje uzerinden cagiracagiz
 
         Statement st = con.createStatement();
 
